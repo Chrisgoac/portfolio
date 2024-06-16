@@ -5,8 +5,8 @@ import MailIcon from "./icons/Mail.astro"
 import SocialPill from "./Social.astro"
 ---
 
-<div class="w-full flex justify-between items-start">
-  <div class="text-left md:mr-16">
+<div class="w-full flex flex-col-reverse md:flex-row justify-between items-center md:items-start">
+  <div class="text-left md:mr-16 mt-8 md:mt-0">
     <h1
       class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white"
     >
@@ -17,7 +17,7 @@ import SocialPill from "./Social.astro"
     >
       Soy un desarrollador Frontend y Backend, con experiencia en administración de BBDD y SSOO
     </p>
-    <nav class="flex flex-wrap gap-4 mt-8 justify-end">
+    <nav class="flex flex-wrap gap-4 mt-8 justify-start">
       <SocialPill href="mailto:contacto@chrigoac.dev">
         <MailIcon class="size-4" />
         Contáctame
@@ -30,7 +30,7 @@ import SocialPill from "./Social.astro"
   </div>
   <div class="flex-shrink-0">
     <img
-      class="rounded-full shadow-lg size-64"
+      class="rounded-full shadow-lg w-64 h-64"
       src="/christian.jpeg"
       alt={personalImageAlt}
     />
