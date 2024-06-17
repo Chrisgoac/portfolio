@@ -1,0 +1,30 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "Enero 2024 - Junio 2024",
+    title: "Fullstack developer",
+    company: "Barcelona Supercomputing Center",
+    description:
+      "He desarrollado de aplicaciones web fullstack usando Flask y React. También he gestionado los datos de la web usando SQLite. He participado en la implementación de nuevas funcionalidades en las aplicaciones web de la empresa utilizando su API.",
+    link: "https://twitch.tv/midudev",
+  },
+  {
+    date: "Marzo 2022 - Actualmente",
+    title: "Operador de sistemas",
+    company: "Grupo Godó de Comunicación",
+    description:
+      "He sido responsable de la gestión de incidencias de negocio, así como incidencias críticas y de respuesta inmediata. He realizado deploys de las aplicaciones corporativas, así como de la gestión de las incidencias de estas aplicaciones y he mantenido una monitorización constante usando la herramienta con Zabbix."
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>

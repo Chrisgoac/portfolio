@@ -1,29 +1,10 @@
 ---
 import Layout from '../layouts/Layout.astro'
-import TailwindCSSIcon from '../components/icons/TailwindCSS.astro';  
-import NextJSIcon from '../components/icons/NextJS.astro';
-import AzureIcon from '../components/icons/Azure.astro';
-import BashIcon from '../components/icons/Bash.astro';
-import FlaskIcon from '../components/icons/Flask.astro';
-import GitHubIcon from '../components/icons/GitHub.astro';
-import JavaIcon from '../components/icons/Java.astro';
-import JavaScriptIcon from '../components/icons/JavaScript.astro';
-import TypeScriptIcon from '../components/icons/TypeScript.astro';
-import PythonIcon from '../components/icons/Python.astro';
-import ReactIcon from '../components/icons/React.astro';
-import MariaDBIcon from '../components/icons/MariaDB.astro';
-import MySQLIcon from '../components/icons/MySQL.astro';
-import MongoDBIcon from '../components/icons/MongoDB.astro';
-import PostgreSQLIcon from '../components/icons/PostgreSQL.astro';
-import OpenAIIcon from '../components/icons/OpenAI.astro';
-import PHPIcon from '../components/icons/PHP.astro';
-import ParcelIcon from '../components/icons/Parcel.astro';
-import SQLiteIcon from '../components/icons/SQLite.astro';
-import SpringBootIcon from '../components/icons/SpringBoot.astro';
-import LinkedInIcon from '../components/icons/LinkedIn.astro';
-import AstroIcon from '../components/icons/AstroIcon.astro';
 import Section from '../components/Section.astro';
 import FirstAbout from '../components/FirstAbout.astro';
+import Projects from '../components/Projects.astro';
+import AboutMe from '../components/AboutMe.astro';
+import Experience from '../components/Experience.astro';
 ---
 
 <Layout title="Portfolio de Christian González Acosta" description="Desarrollador Frontend y Backend, con experiencia en administración de BBDD y SSOO">
@@ -34,39 +15,34 @@ import FirstAbout from '../components/FirstAbout.astro';
 		  </Hero>
 		</Section>
 
-		<Section id="experiencia" class="text-center mt-16">
-			<h1 class="text-4xl font-bold">Portfolio</h1>
-			<p class="text-lg">
-				Desarrollador Frontend y Backend, con experiencia en administración de BBDD y SSOO
-			</p>
-		</Section>
+		<div class="space-y-24">
+			<Section id="experiencia">
+			  <h2
+				class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
+			  >
+				Experiencia laboral
+			  </h2>
+			  <Experience />
+			</Section>
+		
+			<Section id="proyectos">
+			  <h2
+				class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
+			  >
+				Proyectos
+			  </h2>
+			  <Projects />
+			</Section>
+		
+			<Section id="sobre-mi">
+			  <h2
+				class="flex items-center mb-6 text-3xl font-semibold gap-x-8 text-black/80 dark:text-white"
+			  >
+				Sobre mí
+			  </h2>
+			  <AboutMe />
+			</Section>
+		  </div>
 
 	</main>
-		<ul role="list" class="link-card-grid">
-			<TailwindCSSIcon/>
-			<NextJSIcon/>
-			<JavaScriptIcon class="w-10 h-10"/>
-			<SpringBootIcon/>
-			<LinkedInIcon/>
-			<AstroIcon/>
-			<PythonIcon class="w-10 h-10"/>
-			<TypeScriptIcon/>
-			<SQLiteIcon class="w-10 h-10"/>
-			<OpenAIIcon/>
-			<PHPIcon/>
-			<ParcelIcon/>
-			<MongoDBIcon/>
-			<MySQLIcon/>
-			<MariaDBIcon/>
-			<OpenAIIcon/>
-			<FlaskIcon/>
-			<GitHubIcon/>
-			<AzureIcon/>
-			<BashIcon/>
-			<JavaIcon/>
-			<ParcelIcon/>
-			<PHPIcon/>
-			<PostgreSQLIcon/>
-			<ReactIcon/>
-		</ul>
 </Layout>
