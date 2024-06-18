@@ -2,15 +2,18 @@ import tailwind from "@astrojs/tailwind";
 import { defineConfig } from 'astro/config';
 import partytown from '@astrojs/partytown'
 
+import robotsTxt from "astro-robots-txt"
+
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://astro-article.netlify.app/',
+	site: 'https://chrisgoac.dev/',
 	integrations: [
-    tailwind(),
-		partytown({
-			config: {
-			  forward: ["dataLayer.push"],
-			},
-		}),
+		robotsTxt(),
+		tailwind(),
+			partytown({
+				config: {
+				forward: ["dataLayer.push"],
+				},
+			}),
 	],
 });
